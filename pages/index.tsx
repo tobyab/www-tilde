@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           <h1 className="text-6xl font-bold w-3/4">An easier way to take notes</h1>
           <p className="text-gray-600 w-2/3 text-xl pt-4">Tilde is a simple, open source way to take your notes.</p>
           <button
-              className="bg-gray-100 py-4 px-6 rounded-xl mt-8 text-medium flex border-2 border-transparent hover:border-gray-200"
+              className="bg-gray-100 py-4 px-6 rounded-xl mt-8 text-medium flex border-2 border-transparent hover:border-gray-200 cursor-not-allowed"
           >
             Download
           </button>
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
             className="w-1/2 rounded-lg"
         />
       </div>
-      <div className="mt-64 flex space-x-64 justify-center">
+      <div className="mt-64 md:flex space-x-64 justify-center">
         <Image
             src={Two}
             alt="A screenshot of Tilde in action"
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
             Tilde helps remove all distractions. It’s just you, and your writing.
           </p>
           <button
-              className="bg-gray-100 py-4 px-6 rounded-xl mt-8 text-medium flex border-2 border-transparent hover:border-gray-200"
+              className="bg-gray-100 py-4 px-6 rounded-xl mt-8 text-medium flex border-2 border-transparent hover:border-gray-200 cursor-not-allowed"
           >
             Check out some examples
           </button>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
             Right from installation, Tilde is ready to use. No configuration required.
           </p>
           <button
-              className="bg-gray-100 py-4 px-6 rounded-xl mt-8 text-medium flex border-2 border-transparent hover:border-gray-200"
+              className="bg-gray-100 py-4 px-6 rounded-xl mt-8 text-medium flex border-2 border-transparent hover:border-gray-200 cursor-not-allowed"
           >
             Get started
           </button>
@@ -100,6 +100,24 @@ const Home: NextPage = () => {
             className="w-1/2 rounded-lg border"
         />
         </div>
+      </div>
+      <div className="mb-64 justify-center text-center">
+        <Image
+            src="https://github.com/developedbytoby/tilde/raw/master/resources/icon.png"
+            alt="Tilde app icon"
+            height="128"
+            width="128"
+            className="mx-auto mb-16"
+        />
+        <h1 className="text-6xl font-bold w-3/4 mx-auto">So, what are you waiting for?</h1>
+        <p className="text-gray-600 text-xl mt-8">
+          Get started right now for totally free.
+        </p>
+        <button
+            className="bg-gray-100 py-4 px-6 rounded-xl mt-8 text-medium flex border-2 border-transparent hover:border-gray-200 mx-auto cursor-not-allowed"
+        >
+          Download
+        </button>
       </div>
       <h1 className="mb-8 text-xl">Built by <Link
             href="https://tobyb.dev"
